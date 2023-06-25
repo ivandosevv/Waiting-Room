@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Virtual Reception</title>
+    <link rel="stylesheet" type="text/css" href="styles_main.css">
+</head>
+<body>
+    <!-- Section for queue management -->
+    <section id="queueManagement">
+        <h2>Queue Management</h2>
+        <form id="manageQueueForm">
+            <input type="text" id="queue" name="queue" placeholder="Queue Name" required>
+            <select name="action">
+                <option value="create">Create</option>
+                <option value="delete">Delete</option>
+            </select>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <!-- Section for joining and leaving queues -->
+    <section id="queueInteraction">
+        <h2>Join or Leave a Queue</h2>
+        <form id="joinQueueForm">
+            <input type="text" id="queueToJoin" name="queue" placeholder="Queue Name" required>
+            <input type="submit" value="Join Queue">
+        </form>
+        <button id="leaveQueueButton">Leave Queue</button>
+    </section>
+
+    <!-- Section for reordering queues -->
+    <section id="queueReordering">
+        <h2>Reorder a Queue</h2>
+        <form id="reorderQueueForm">
+            <input type="text" id="queueToReorder" name="queue" placeholder="Queue Name" required>
+            <input type="text" id="student1" name="student1" placeholder="Student 1" required>
+            <input type="text" id="student2" name="student2" placeholder="Student 2" required>
+            <input type="submit" value="Reorder">
+        </form>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>

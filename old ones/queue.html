@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Queue</title>
+    <link rel="stylesheet" href="styles_queue.css">
+</head>
+<body>
+    <header>
+        <h1>Virtual Reception - Queue</h1>
+    </header>
+    <main>
+        <section id="queue">
+            <h2>Current Queue</h2>
+            <!-- This list will be populated with JavaScript -->
+            <ul id="studentQueue">
+            </ul>
+        </section>
+        <section id="enqueue">
+            <h2>Join the queue</h2>
+            <form action="join_queue.php" method="post">
+                <input type="text" id="queue" name="queue" placeholder="Queue Name" required>
+                <input type="submit" value="Join Queue">
+            </form>
+            
+        </section>
+    </main>
+</body>
+</html>

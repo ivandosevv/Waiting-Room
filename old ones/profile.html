@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <link rel="stylesheet" href="styles_profile.css">
+</head>
+<body>
+    <header>
+        <h1>Virtual Reception - Profile</h1>
+    </header>
+    <main>
+        <form action="updateProfile.php" method="POST">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" disabled><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="password">New Password:</label><br>
+            <input type="password" id="password" name="password"><br>
+            <label for="password-repeat">Repeat New Password:</label><br>
+            <input type="password" id="password-repeat" name="password-repeat"><br>
+            <input type="submit" value="Update Profile">
+        </form>
+    </main>
+</body>
+</html>

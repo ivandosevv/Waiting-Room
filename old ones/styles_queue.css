@@ -1,0 +1,12 @@
+body {
+    background-color: #f0f0f0;
+}
+
+#queue ul {
+    list-style-type: none;
+}
+
+#enqueue form {
+    display: flex;
+    justify-content: center;
+}

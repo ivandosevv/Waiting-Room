@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        window.onload = function() {
+            var url = new URL(window.location.href);
+            var error = url.searchParams.get("error");
+            if (error) {
+                alert(error);
+            }
+        }
+        </script>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles_login.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Virtual Reception</h1>
+    </header>
+    <main>
+        <form action="authenticate.php" method="post">
+            <input type="text" id="username" name="username" placeholder="Username" required>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <input type="submit" value="Log In">
+        </form>
+        
+    </main>
+</body>
+</html>

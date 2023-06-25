@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Teacher Room</title>
+</head>
+<body>
+    <h2>Welcome to the Teacher Room</h2>
+    <p>Next number: <span id="next_number"></span></p>
+    <button onclick="addStudentToQueue()">Add Student To Queue</button>
+    <input id="datetime_entry" type="datetime-local">
+    <button onclick="inviteNextStudent()">Invite Next Student</button>
+    <button onclick="fetchNextNumber()">Get next number</button>
+    <button onclick="inviteStudentByNumber()">Invite Student By Number</button>
+    <button onclick="addComment()">Add Comment</button>
+    <button onclick="createRoom()">Create Room</button>
+    <button onclick="logout()">Logout</button>
+    <div id="queue_list"></div>
+    <div id="comments_section"></div>
+    <script src="teacher_room.js"></script>
+</body>
+</html>

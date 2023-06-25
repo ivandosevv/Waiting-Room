@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        window.onload = function() {
+            var url = new URL(window.location.href);
+            var error = url.searchParams.get("error");
+            if (error) {
+                alert(error);
+            }
+        }
+        </script>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles_registration.css">
+</head>
+<body>
+    <header>
+        <h1>Virtual Reception - Registration</h1>
+    </header>
+    <main>
+        <form id="registrationForm" action="register.php" method="post">
+            <input type="text" id="username" name="username" placeholder="Username" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <input type="submit" value="Register">
+        </form>
+        
+    </main>
+</body>
+</html>
